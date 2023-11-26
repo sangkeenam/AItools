@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Vendor Tools Collection</title>
+  <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap'><link rel="stylesheet" href="./style.css">
+  <style>
+    .kenburns-top {
+      -webkit-animation: kenburns-top 5s ease-out both;
+      animation: kenburns-top 5s ease-out both;
+    }
+
+    @-webkit-keyframes kenburns-top {
+      0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+      }
+
+      100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+      }
+    }
+
+    @keyframes kenburns-top {
+      0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 16%;
+        transform-origin: 50% 16%;
+      }
+
+      100% {
+        -webkit-transform: scale(1.25) translateY(-15px);
+        transform: scale(1.25) translateY(-15px);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+      }
+    }
+
+    .parent {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-gap: 14px;
+    }
+
+    .parent > div {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* .parent .kenburns-top {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 2 / 1 / 3 / 2; }
+    .div6 { grid-area: 2 / 2 / 3 / 3; }
+    .div7 { grid-area: 2 / 3 / 3 / 4; }
+    .div8 { grid-area: 2 / 4 / 3 / 5; }
+    .div9 { grid-area: 3 / 1 / 4 / 2; }
+    .div10 { grid-area: 3 / 2 / 5 / 3; }
+    .div11 { grid-area: 3 / 3 / 4 / 4; }
+    .div12 { grid-area: 3 / 4 / 4 / 5; }     */
+
+    .parent .kenburns-top {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      grid-column-gap: 14px;
+      grid-row-gap: 14px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+      /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%);   */
+      /* clip-path: circle(50% at 50% 50%);     */
+      /* clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%); */
+      /* background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%); */
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 1 / 3 / 2 / 4; }
+    .div6 { grid-area: 2 / 1 / 3 / 2; }
+    .div7 { grid-area: 2 / 2 / 3 / 3; }
+    .div8 { grid-area: 2 / 3 / 3 / 4; }
+    .div9 { grid-area: 2 / 4 / 3 / 5; }
+    .div10 { grid-area: 3 / 1 / 4 / 2; }
+    .div11 { grid-area: 3 / 2 / 4 / 3; }
+    .div12 { grid-area: 3 / 3 / 4 / 4; }
+    .div13 { grid-area: 3 / 4 / 4 / 5; }    
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav class="sidebar close">
+  <header>
+    <div class="image-text">
+      <span class="image">
+        <img src="./buybeer_128.png" alt="">
+      </span>
+
+      <div class="text logo-text">
+        <span class="name">Sangkee Nam </span>
+        <span class="profession">AI SW Creator</span>
+      </div>
+    </div>
+
+    <i class='bx bx-chevron-right toggle'></i>
+  </header>
+
+  <div class="menu-bar">
+    <div class="menu">
+
+      <li class="search-box">
+        <i class='bx bx-search icon'></i>
+        <input type="text" placeholder="Search...">
+      </li>
+
+      <ul class="menu-links">
+        <li class="nav-link">
+          <a href="https://ai-vendorreportgit-rzd4ekfgebrdrlvk2kpy7q.streamlit.app/">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">국내업체 경영현황</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="https://aiusavendorreport-s4ywm4jtrytcwrhffgjp4c.streamlit.app/">
+            <i class='bx bx-bar-chart-alt-2 icon'></i>
+            <span class="text nav-text">해외업체 경영현황</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="C:\langchain\poet\menu\Analog Clock - Dark & Light\dist\index.html">
+            <i class='bx bx-bell icon'></i>
+            <span class="text nav-text">SW 재료비 현황</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="C:\langchain\poet\menu\Analog Clock - Dark & Light\dist\index.html">
+            <i class='bx bx-pie-chart-alt icon'></i>
+            <span class="text nav-text">HW 재료비 현황</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="C:\langchain\poet\menu\Analog Clock - Dark & Light\dist\index.html">
+            <i class='bx bx-heart icon'></i>
+            <span class="text nav-text">판매 가격 생성</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="C:\langchain\poet\menu\Analog Clock - Dark & Light\dist\index.html">
+            <i class='bx bx-wallet icon'></i>
+            <span class="text nav-text">손익 Simulation</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="https://monkeynft-app-chi.vercel.app/">
+            <i class='bx bx-wallet icon'></i>
+            <span class="text nav-text">인공지능Tools</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="https://opensea.io/collection/cryptomonkeyall">
+            <i class='bx bx-wallet icon'></i>
+            <span class="text nav-text">NFT Collections</span>
+          </a>
+        </li>
+
+        <li class="nav-link">
+          <a href="https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q">
+            <i class='bx bx-wallet icon'></i>
+            <span class="text nav-text">YouTube</span>
+          </a>
+        </li>
+                 
+      </ul>
+    </div>
+
+    <div class="bottom-content">
+      <li class="">
+        <a href="#">
+          <i class='bx bx-log-out icon'></i>
+          <span class="text nav-text">Logout</span>
+        </a>
+      </li>
+
+      <li class="mode">
+        <div class="sun-moon">
+          <i class='bx bx-moon icon moon'></i>
+          <i class='bx bx-sun icon sun'></i>
+        </div>
+        <span class="mode-text text">Dark mode</span>
+
+        <div class="toggle-switch">
+          <span class="switch"></span>
+        </div>
+      </li>
+
+    </div>
+  </div>
+
+</nav>
+<!-- <section class="home" style="background-image: url('./home.jpg'); background-size: cover; background-position: center;"></section>
+<section class="home kenburns-top" style="background-image: url('./home.jpg'); background-size: cover; background-position: center;">
+<section class="home" style="background-image: url('https://i.seadn.io/gae/YB6ZnO0ALMMEORm9ncI6j63ee7kHW1a8erToW7s98YaeeJ64xvB7Ug29YpW3p5Sf1YK-H1h9V3OP6ueo1dr1gJLCXD99MpFplZzB?auto=format&dpr=1&w=1000'); background-size: cover; background-position: center;"> -->
+<!-- <div class="text">Sangkee's SW App Collection</div> -->
+<!-- </section> -->
+<!-- <div class="parent">
+  <div class="div1 kenburns-top" style="background-image: url('./home.jpg');">
+    <a href="https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q"></a>
+  </div> -->
+
+<section class="home parent">
+    <div class="div1 kenburns-top" style="background-image: url('./home.jpg');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div2 kenburns-top" style="background-image: url('./home2.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div3 kenburns-top" style="background-image: url('./home3.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div4 kenburns-top" style="background-image: url('./home4.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div5 kenburns-top" style="background-image: url('./home5.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div6 kenburns-top" style="background-image: url('./home6.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div7 kenburns-top" style="background-image: url('./home7.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div8 kenburns-top" style="background-image: url('./home8.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div9 kenburns-top" style="background-image: url('./home9.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div10 kenburns-top" style="background-image: url('./home10.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div11 kenburns-top" style="background-image: url('./home11.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>
+    <div class="div12 kenburns-top" style="background-image: url('./home12.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>  
+    <div class="div13 kenburns-top" style="background-image: url('./home13.png');" onclick="window.location='https://www.youtube.com/channel/UCAnOCFfEVui1JKsokjJ1F4Q';"></div>>   
+</section>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
